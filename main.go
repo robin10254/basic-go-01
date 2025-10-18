@@ -15,11 +15,11 @@ var (
 )
 
 func main() {
-	http.HandleFunc("/", welcomeTodos)
-	http.HandleFunc("/show-tasks", showTasks)
-	http.HandleFunc("/add-task", addTask)
+	// http.HandleFunc("/", welcomeTodos)
+	// http.HandleFunc("/show-tasks", showTasks)
+	// http.HandleFunc("/add-task", addTask)
 
-	http.ListenAndServe(":9000", nil)
+	// http.ListenAndServe(":9000", nil)
 
 	/* Start of Format Specifier Topic
 
@@ -71,6 +71,30 @@ func main() {
 
 	// // example interface
 	// tempMain()
+
+	// // bitwise operation
+	// p := 34
+	// q := 20
+	// fmt.Printf("Value of p = %d, binary = %b", p, p)
+	// fmt.Printf("\nValue of q = %d, binary = %6b", q, q)
+	// // & (bitwise AND)
+	// result1 := p & q
+	// fmt.Printf("\nResult of p & q = %d", result1)
+	// // | (bitwise OR)
+	// result2 := p | q
+	// fmt.Printf("\nResult of p | q = %d", result2)
+	// // ^ (bitwise XOR)
+	// result3 := p ^ q
+	// fmt.Printf("\nResult of p ^ q = %d", result3)
+	// // << (left shift)
+	// result4 := p << 1
+	// fmt.Printf("\nResult of p << 1 = %d", result4)
+	// // >> (right shift)
+	// result5 := p >> 1
+	// fmt.Printf("\nResult of p >> 1 = %d", result5)
+	// // &^ (AND NOT)
+	// result6 := p &^ q
+	// fmt.Printf("\nResult of p &^ q = %d", result6)
 
 }
 
