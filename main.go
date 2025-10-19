@@ -96,6 +96,135 @@ func main() {
 	// result6 := p &^ q
 	// fmt.Printf("\nResult of p &^ q = %d", result6)
 
+	// practice problems
+
+	// Problem 1
+	// Create an array of integers with length 5
+	// Print the length of the array
+	// temp := [5]int{}
+	// var temp_1 [10]int
+	// tmep_2 := [...]int{1, 2, 3, 4, 5, 6, 7}
+	// fmt.Printf("Length of array:%d", len(temp))
+	// fmt.Printf("\nLength of array:%d", len(temp_1))
+	// fmt.Printf("\nLength of array:%d", len(tmep_2))
+
+	// // Problem 2
+	// // 2024 - Is leap year?
+	// // Yes / No
+	// var year int
+	// fmt.Printf("Enter year: ")
+	// fmt.Scanf("%d", &year)
+	// divisibleBy4 := year % 4
+	// divisibleBy100 := year % 100
+	// divisibleBy400 := year % 400
+
+	// if (divisibleBy4 == 0 && divisibleBy100 != 0) || divisibleBy400 == 0 {
+	// 	fmt.Printf("Yes\n")
+	// } else {
+	// 	fmt.Printf("No\n")
+	// }
+
+	// // Problem 3: write switch
+	// var day int
+	// fmt.Printf("Input a day in integer: ")
+	// fmt.Scanf("%d", &day)
+
+	// switch day {
+	// case 1:
+	// 	fmt.Printf("Monday")
+	// case 2:
+	// 	fmt.Printf("Tuesday")
+	// case 3:
+	// 	fmt.Printf("Wednesday")
+	// default:
+	// 	fmt.Printf("Nothing")
+	// }
+
+	// // Problem 4: write for loop
+	// var n int
+	// sum := 0
+	// fmt.Printf("Enter a value: ")
+	// fmt.Scanf("%d", &n)
+
+	// for i := 1; i <= n; i++ {
+	// 	if i%3 == 0 && i%5 == 0 {
+	// 		sum += i
+	// 	}
+	// }
+
+	// fmt.Printf("Sum: %d", sum)
+
+	// // Problem 5: slice input, cumulative sum
+	// var length int
+	// fmt.Printf("Input Slice length: ")
+	// fmt.Scanf("%d", &length)
+
+	// datalist := make([]int, 0, length)
+
+	// var x int
+	// fmt.Printf("Input Slice elements: ")
+	// for i := 0; i < length; i++ {
+	// 	fmt.Scan(&x)
+	// 	datalist = append(datalist, x)
+	// }
+
+	// sum := 0
+	// for _, data := range datalist {
+	// 	sum += data
+	// }
+
+	// fmt.Printf("sum: %d", sum)
+
+	// Problem 6: recursion
+	var n int
+	// var n, m int
+
+	fmt.Printf("Enter an input: ")
+	fmt.Scan(&n)
+	// fmt.Printf("Enter an input: ")
+	// fmt.Scan(&m)
+
+	res := recursion(n)
+	// res := recursion(n, m)
+	// recursion(n)
+
+	// fmt.Printf("factorial: %d", res)
+	fmt.Printf("Fibonacci value : %d", res)
+	// fmt.Printf("Value : %d", res)
+
+}
+
+func recursion(num int) int { // num int, power int
+	// // rec problem 1
+	// if num == 1 {
+	// 	return 1
+	// }
+
+	// return num * recursion(num-1)
+
+	// // rec prob 2
+	// if num == 1 {
+	// 	fmt.Printf("%d ", num)
+	// 	return
+	// }
+	// fmt.Printf("%d ", num)
+
+	// recursion(num - 1)
+
+	// rec prob 3 fibonacci
+	if num <= 1 {
+		return num
+	}
+
+	return recursion(num-1) + recursion(num-2)
+
+	// // rec problem 4 n^m
+	// if power == 0 {
+	// 	return 1
+	// }
+
+	// return num * recursion(num, power-1)
+
 }
 
 type rect struct {
